@@ -19,13 +19,13 @@ return (
       <img src={country.flags.png} alt={country.name.common} />
       <div className='product-info'>
         <h3>{country.name.common}</h3>
-        <h6>
+        <p>
                   {" "}
-                  Population:{" "}
+                  <span>Population: </span>
                   {new Intl.NumberFormat().format(country.population)}
-                </h6>
-        <p className='region'>Region: {country.region}</p>
-        <p className='capital'>Capital City: {country.capital}</p>
+                </p>
+        <p className='region'><span>Region: </span>{country.region}</p>
+        <p className='capital'><span>Capital City: </span>{country.capital}</p>
       </div>
     </div>
   ))}
