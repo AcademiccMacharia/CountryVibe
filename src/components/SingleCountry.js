@@ -41,21 +41,21 @@ export default function SingleCountry() {
                             <h1>{item.name}</h1>
                             <div className="info-list">
                                 <ul className="left-list">
-                                    <li>Native Name: {item.nativeName}</li>
-                                    <li>Population: {item.population.toLocaleString()}</li>
-                                    <li>Region: {item.region}</li>
-                                    <li>Subregion: {item.subregion}</li>
-                                    <li>Capital: {item.capital}</li>
+                                    <li><span>Native Name: </span>{item.nativeName}</li>
+                                    <li><span>Population: </span> {item.population.toLocaleString()}</li>
+                                    <li><span>Region: </span>{item.region}</li>
+                                    <li><span>Subregion: </span>{item.subregion}</li>
+                                    <li><span>Capital: </span>{item.capital}</li>
                                 </ul>
                                 <ul className="right-list">
 
-                                    <li>Top Level Domain: {item.topLevelDomain}</li>
-                                    <li>Currencies: {item.currencies.map(currency => currency.name).join(", ")}</li>
-                                    <li>Languages: {item.languages.map(language => language.name).join(", ")}</li>
+                                    <li><span>Top Level Domain: </span>{item.topLevelDomain}</li>
+                                    <li><span>Currencies: </span>{item.currencies.map(currency => currency.name).join(", ")}</li>
+                                    <li><span>Languages: </span>{item.languages.map(language => language.name).join(", ")}</li>
                                 </ul>
                             </div>
                             <div className="border-countries">
-                                <p>Border Countries:</p>
+                                <p><span>Border Countries: </span></p>
                                 <ul className="borders">
                                     {country.map((item) => {
                                         if (Array.isArray(item.borders)) {
