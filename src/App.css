@@ -195,10 +195,78 @@ body {
   transform: translateY(-10px);
   z-index: 2;
 }
-/* .product:hover ~ .product {
+.product:hover ~ .product {
   filter: blur(3px);
   opacity: 0.8;
-} */
+}
+
+
+
+
+/* single country styles */
+.country-info h1 {
+  margin-bottom: 20px;
+}
+.go-back {
+  text-decoration: none;
+  color: inherit;
+}
+.go-back p {
+  text-decoration: none;
+  color: inherit;
+  padding: 5px 20px;
+  text-align: center;
+  font-size: 12px;
+  margin: 20px;
+  margin-left: 142px;
+  width: fit-content;
+  background-color: var(--elements);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+.left-arrow {
+  margin-right: 10px;
+}
+
+.single-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  margin: 80px auto;
+}
+.single-container img {
+  width: 400px;
+  height: 300px;
+}
+.info-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.info-list li {
+  list-style: none;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+.border-countries {
+  display: flex;
+  align-items: center;
+}
+
+.border-countries p {
+  margin-right: 0.5rem;
+}
+.borders {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+.borders li {
+  margin-right: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--elements);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  font-size: 12px;
+}
 
 
 /* media styles applied here */
@@ -207,8 +275,29 @@ body {
   .products {
     grid-template-columns: repeat(2, 1fr);
   }
-  .search-input{
+  .search-input {
     width: 200px;
+  }
+  .single-container{ 
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .single-container img {
+    width: 300px;
+    height: 200px;
+  }
+  .info-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .border-countries{
+    flex-direction: column;
+  }
+  .borders ul{
+    margin-top: 10px;
+  }
+  .borders li {
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 2px 4px;
   }
 }
 
@@ -216,7 +305,7 @@ body {
   .products {
     grid-template-columns: repeat(1, 1fr);
   }
-  .search-input{
+  .search-input {
     width: 250px;
   }
   .search-filter {
@@ -226,7 +315,7 @@ body {
   .search-filter .search {
     margin-bottom: 20px;
   }
-  .filter select{
+  .filter select {
     margin-right: 50px;
   }
   .navbar {

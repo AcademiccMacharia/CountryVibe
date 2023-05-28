@@ -55,6 +55,7 @@
 // export default Products
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import data from './data.json';
 
 const Products = ({ selectedRegion }) => {
@@ -66,10 +67,13 @@ const Products = ({ selectedRegion }) => {
   return (
     <div className="products">
       {filteredCountries.map((country) => (
-        <div className="product" key={country.id}>
-          <img src={country.flags.png} alt={country.name.common} />
+
+        <div className="product">
+          <Link key={country.id} to={`/countries/${country.name}`}>
+            <img src={country.flags.png} alt={country.name} />
+          </Link>
           <div className="product-info">
-            <h3>{country.name.common}</h3>
+            <h3>{country.name}</h3>
             <p>
               <span>Population: </span>
               {new Intl.NumberFormat().format(country.population)}
@@ -84,9 +88,11 @@ const Products = ({ selectedRegion }) => {
             </p>
           </div>
         </div>
+
       ))}
     </div>
   );
 };
 
 export default Products;
+
