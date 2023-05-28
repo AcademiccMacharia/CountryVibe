@@ -1,20 +1,37 @@
 import { React, useEffect, useState } from 'react'
 
-const Products = () => {
+
+const countries_url = 'https://restcountries.com/v3.1';
+const Products = ({selectedRegion}) => {
 
   //fetch products from Rest api
   const [countries, setCountries] = useState([])
-  
+
   useEffect(() => {
-    fetch('https://restcountries.com/v3.1/all')
-      .then(res => res.json())
-      .then(json => setCountries(json))
-      .catch(error => console.error('Error fetching countries:', error));
-  }, [])
+    const fetchCountries = async () => {
+      try {
+        const res = await fetch(`${countries_url}/all`);
+
+        if (!res.ok) throw new Error('Failed to fetch countries.');
+
+        const results = await res.json();
+        setCountries(results);
+      } catch (error) {
+        console.error('Error fetching countries:', error);
+      }
+    };
+
+    fetchCountries();
+  }, []);
+
+  const filteredCountries = countries.filter((country) =>
+  selectedRegion === 'all' ? true : country.region === selectedRegion
+);
+
 
 return (
 <div className='products'>
-  {countries.map(country => (
+  {filteredCountries.map(country => ( 
     <div className='product' key={country.id}>
       <img src={country.flags.png} alt={country.name.common} />
       <div className='product-info'>

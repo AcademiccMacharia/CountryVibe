@@ -1,1 +1,15 @@
 node_modules
+/build
+/dist
+
+# Environment file
+/.env
+
+# Editor files
+/.vscode
+/.idea
+
+# Compiled output
+*.log
+*.pid
+*.lock
