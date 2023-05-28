@@ -24,7 +24,7 @@ self.__precacheManifest = [
     "url": "/CountryVibe/static/media/Moon.2a40a831.svg"
   },
   {
-    "revision": "cf7db108456e9b3281e4e6b907466f28",
+    "revision": "9092c5fb419ba7e4928fabb550ad7bde",
     "url": "/CountryVibe/index.html"
   }
 ];
