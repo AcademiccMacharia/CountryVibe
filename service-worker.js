@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/CountryVibe/precache-manifest.e9af900be15d2666e07b9bbeacbe1884.js"
+  "/CountryVibe/precache-manifest.67bcbddbc4f05c5ef241792ed071201b.js"
 );
 
 workbox.clientsClaim();
