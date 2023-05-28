@@ -25,7 +25,7 @@ const App = () => {
         <Navbar />
         <Routes>
           <Route
-            path="/"
+            exact path="/"
             element={
               <>
                 <Search
@@ -39,7 +39,7 @@ const App = () => {
               </>
             }
           />
-          <Route path="/countries/:name" element={<SingleCountry />} />
+          <Route exact path="/countries/:name" element={<SingleCountry />} />
         </Routes>
       </BrowserRouter>
     </div>
