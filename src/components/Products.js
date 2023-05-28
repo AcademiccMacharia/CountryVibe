@@ -1,4 +1,4 @@
-import { React, useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 
 const countries_url = 'https://restcountries.com/v3.1';

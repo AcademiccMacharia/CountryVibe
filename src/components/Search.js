@@ -1,4 +1,4 @@
-import { React, useState } from 'react'
+import React, { useState } from 'react'
 import { FaSearch } from 'react-icons/fa'
 
 const Search = ({ onRegionSelect, onSearch }) => {
