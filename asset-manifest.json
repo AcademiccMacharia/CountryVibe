@@ -1,15 +1,15 @@
 {
-  "main.css": "/CountryVibe/static/css/main.6e8da2df.chunk.css",
-  "main.js": "/CountryVibe/static/js/main.bf4d0af5.chunk.js",
-  "main.js.map": "/CountryVibe/static/js/main.bf4d0af5.chunk.js.map",
-  "static/js/1.cbcca69f.chunk.js": "/CountryVibe/static/js/1.cbcca69f.chunk.js",
-  "static/js/1.cbcca69f.chunk.js.map": "/CountryVibe/static/js/1.cbcca69f.chunk.js.map",
+  "main.css": "/CountryVibe/static/css/main.8bbfa3da.chunk.css",
+  "main.js": "/CountryVibe/static/js/main.e39574b3.chunk.js",
+  "main.js.map": "/CountryVibe/static/js/main.e39574b3.chunk.js.map",
+  "static/js/1.5e3ef855.chunk.js": "/CountryVibe/static/js/1.5e3ef855.chunk.js",
+  "static/js/1.5e3ef855.chunk.js.map": "/CountryVibe/static/js/1.5e3ef855.chunk.js.map",
   "runtime~main.js": "/CountryVibe/static/js/runtime~main.71e07255.js",
   "runtime~main.js.map": "/CountryVibe/static/js/runtime~main.71e07255.js.map",
   "static/media/Sun.686c113d.svg": "/CountryVibe/static/media/Sun.686c113d.svg",
   "static/media/Moon.2a40a831.svg": "/CountryVibe/static/media/Moon.2a40a831.svg",
-  "static/css/main.6e8da2df.chunk.css.map": "/CountryVibe/static/css/main.6e8da2df.chunk.css.map",
+  "static/css/main.8bbfa3da.chunk.css.map": "/CountryVibe/static/css/main.8bbfa3da.chunk.css.map",
   "index.html": "/CountryVibe/index.html",
-  "precache-manifest.e8afe9e9a4702e5972ef4558dc08c346.js": "/CountryVibe/precache-manifest.e8afe9e9a4702e5972ef4558dc08c346.js",
+  "precache-manifest.e9af900be15d2666e07b9bbeacbe1884.js": "/CountryVibe/precache-manifest.e9af900be15d2666e07b9bbeacbe1884.js",
   "service-worker.js": "/CountryVibe/service-worker.js"
 }
