@@ -50,8 +50,12 @@ export default function SingleCountry() {
                                 <ul className="right-list">
 
                                     <li><span>Top Level Domain: </span>{item.topLevelDomain}</li>
+                                    {item.currencies && ( 
                                     <li><span>Currencies: </span>{item.currencies.map(currency => currency.name).join(", ")}</li>
+                                    )}
+                                    {item.languages && (
                                     <li><span>Languages: </span>{item.languages.map(language => language.name).join(", ")}</li>
+                                    )}
                                 </ul>
                             </div>
                             <div className="border-countries">
@@ -70,7 +74,7 @@ export default function SingleCountry() {
                                                         </li>
                                                     );
                                                 }
-                                                return null;
+                                                return null
                                             });
                                         }
                                         return null;
