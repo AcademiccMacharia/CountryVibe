@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "5a3501e3651e25cff60f",
-    "url": "/CountryVibe/static/css/main.8bbfa3da.chunk.css"
+    "revision": "3c490b4e84d3eb79e997",
+    "url": "/CountryVibe/static/css/main.5f91cebb.chunk.css"
   },
   {
-    "revision": "5a3501e3651e25cff60f",
-    "url": "/CountryVibe/static/js/main.5a3501e3.chunk.js"
+    "revision": "3c490b4e84d3eb79e997",
+    "url": "/CountryVibe/static/js/main.3c490b4e.chunk.js"
   },
   {
     "revision": "257c473114f032f0447e",
@@ -24,7 +24,7 @@ self.__precacheManifest = [
     "url": "/CountryVibe/static/media/Moon.2a40a831.svg"
   },
   {
-    "revision": "b7e2ca571e2cd60d3adaf8a24f64fb55",
+    "revision": "9e03e84e5e4ce68b21883f9d7050cc10",
     "url": "/CountryVibe/index.html"
   }
 ];
