@@ -1,7 +1,7 @@
 {
   "main.css": "/CountryVibe/static/css/main.5f91cebb.chunk.css",
-  "main.js": "/CountryVibe/static/js/main.3c490b4e.chunk.js",
-  "main.js.map": "/CountryVibe/static/js/main.3c490b4e.chunk.js.map",
+  "main.js": "/CountryVibe/static/js/main.970aadc0.chunk.js",
+  "main.js.map": "/CountryVibe/static/js/main.970aadc0.chunk.js.map",
   "static/js/1.257c4731.chunk.js": "/CountryVibe/static/js/1.257c4731.chunk.js",
   "static/js/1.257c4731.chunk.js.map": "/CountryVibe/static/js/1.257c4731.chunk.js.map",
   "runtime~main.js": "/CountryVibe/static/js/runtime~main.71e07255.js",
@@ -10,6 +10,6 @@
   "static/media/Moon.2a40a831.svg": "/CountryVibe/static/media/Moon.2a40a831.svg",
   "static/css/main.5f91cebb.chunk.css.map": "/CountryVibe/static/css/main.5f91cebb.chunk.css.map",
   "index.html": "/CountryVibe/index.html",
-  "precache-manifest.34b02f0e4bb74875e583c7e29cf18d11.js": "/CountryVibe/precache-manifest.34b02f0e4bb74875e583c7e29cf18d11.js",
+  "precache-manifest.915b5154884e7794490b7dec67b2dc90.js": "/CountryVibe/precache-manifest.915b5154884e7794490b7dec67b2dc90.js",
   "service-worker.js": "/CountryVibe/service-worker.js"
 }
