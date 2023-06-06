@@ -14,6 +14,7 @@ export default function SingleCountry() {
 
                 if (countryData) {
                     setCountry([countryData]);
+                    console.log(countryData)
                 } else {
                     throw new Error('Country not found.');
                 }

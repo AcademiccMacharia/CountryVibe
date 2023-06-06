@@ -15,8 +15,8 @@ const App = () => {
     setSelectedRegion(region);
   };
 
-  const handleSearch = (term) => {
-    setSearchValue(term);
+  const handleSearch = (name) => {
+    setSearchValue(name);
   };
 
   return (

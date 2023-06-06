@@ -81,7 +81,10 @@ body {
 .light_change_label:active:after {
   width: 30px;
 }
-
+button{
+  background: inherit;
+  border: none;
+}
 .light_change_label svg {
   position: absolute;
   width: 10px;

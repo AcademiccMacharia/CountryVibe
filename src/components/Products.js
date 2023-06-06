@@ -29,31 +29,37 @@ const Products = ({ selectedRegion, searchValue }) => {
   );
 
   return (
-    <div className="products">
-      {filteredCountries.map((country) => (
-        <div className="product" key={country.cca3}>
-          <Link to={`/countries/${country.name.common}`}>
-            <img src={country.flags.png} alt={country.name.common} />
-          </Link>
-          <div className="product-info">
-            <h3>{country.name.common}</h3>
-            <p>
-              <span>Population: </span>
-              {new Intl.NumberFormat().format(country.population)}
-            </p>
-            <p className="region">
-              <span>Region: </span>
-              {country.region}
-            </p>
-            <p className="capital">
-              <span>Capital City: </span>
-              {country.capital}
-            </p>
+
+    (!countries ? (
+      <div>Loading...</div>
+    ) : filteredCountries.length === 0 ? (
+      <div>Loading...</div>
+    ) : (
+      <div className="products">
+        {filteredCountries.map((country) => (
+          <div className="product" key={country.cca3}>
+            <Link to={`/countries/${country.name.common}`}>
+              <img src={country.flags.png} alt={country.name.common} />
+            </Link>
+            <div className="product-info">
+              <h3>{country.name.common}</h3>
+              <p>
+                <span>Population: </span>
+                {new Intl.NumberFormat().format(country.population)}
+              </p>
+              <p className="region">
+                <span>Region: </span>
+                {country.region}
+              </p>
+              <p className="capital">
+                <span>Capital City: </span>
+                {country.capital}
+              </p>
+            </div>
           </div>
-        </div>
-      ))}
-    </div>
-  );
+        ))}
+      </div>
+    )));
 };
 
 export default Products;
