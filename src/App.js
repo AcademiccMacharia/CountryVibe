@@ -4,7 +4,7 @@ import Navbar from './components/Navbar';
 import Search from './components/Search';
 import Products from './components/Products';
 import SingleCountry from './components/SingleCountry';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import { useState } from 'react';
 
 const App = () => {
@@ -21,7 +21,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <BrowserRouter>
+      <Router>
         <Navbar />
         <Routes>
           <Route
@@ -41,7 +41,7 @@ const App = () => {
           />
           <Route exact path="/countries/:name" element={<SingleCountry />} />
         </Routes>
-      </BrowserRouter>
+      </Router>
     </div>
   );
 };
